@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+
+body{
+  padding: 20px;
+  font-family='Raleway', monospace;
+  background-color: #F6A863;
+}
+
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-right: 4px solid black;
+    font-size: 180%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.animation{
+  animation: typewriter 5s steps(25) 1s infinite both,
+             blinkCursor 800ms steps(25) infinite;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 330px;
+  }
+}
+
+@keyframes blinkCursor{
+  from {
+    border-right-color: red;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
